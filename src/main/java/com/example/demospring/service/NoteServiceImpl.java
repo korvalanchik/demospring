@@ -67,7 +67,9 @@ public class NoteServiceImpl implements NoteService{
         System.out.println("All notes: " + noteList);
 
         System.out.println("Note by Id " + uuid + ": " + getById(uuid));
-
+        note2.setContent("Morbi porta conceptam sollicitudin error.");
+        update(note2);
+        System.out.println("After update: " + getById(uuid));
         Note deleteNote = noteList.get(0);
         deleteById(deleteNote.getId());
         System.out.println("All notes: " + noteList);
