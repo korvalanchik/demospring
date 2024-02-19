@@ -10,4 +10,5 @@ public interface NoteService {
     Note add(Note note);
     void deleteById(UUID id) throws NoteServiceImpl.NotDeleteException;
     void update(Note note);
+    Note getById(UUID id);
 }

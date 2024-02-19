@@ -28,12 +28,6 @@ public class FakeDb {
     }
 
     public boolean deleteNoteById(UUID id){
-//        for (Iterator<Note> iterator = notes.listIterator(); iterator.hasNext(); ) {
-//            Note note = iterator.next();
-//            if (note.getId().equals(id)) {
-//                iterator.remove();
-//            }
-//        }
         Iterator<Note> iterator = notes.iterator();
         while (iterator.hasNext()) {
             Note note = iterator.next();
